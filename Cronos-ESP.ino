@@ -18,16 +18,16 @@ void setup() {
 
   if (connected) {
     delay(1000); // wait for 1 second
-    
-
+    Serial.println("Dispositivo pronto para iniciar operação"); // connected to Wi-Fi
   } else {
     Serial.println("Falha na conexão com a rede Wi-Fi!"); // failed to connect to Wi-Fi
   }
-
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
+
+  getRequest(); // get request from server
   
 }
 
@@ -49,4 +49,14 @@ bool Connetion(){
   Serial.println("As leituras são realizadas a cada" + String(timerDelay/1000) + "segundos");
 
   if(WiFi.status() == WL_CONNECTED){ return true; } else{ return false; }
+
+}
+
+JSONVar getRequest(){
+  if ((millis() - lastTime) > timerDelay) {
+    {
+      /* code */
+    }
+    
+  }
 }
