@@ -1,3 +1,3 @@
 # Cronos-ESP
 
-* Repositório dos codigos  do microcontrolador
+* Repositório dos codigos  do microcontrolador'
